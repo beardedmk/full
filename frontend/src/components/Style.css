@@ -1,0 +1,28 @@
+.start, .question, .result{
+padding: 20px 40px
+}
+
+button{
+    border: 0;
+    padding: 10px;
+    background-color: antiquewhite;
+
+}
+button:hover{
+    padding: 11x;
+    cursor: pointer;
+    font-size: 50%;
+    font-weight: bold;
+    
+}
+
+input{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+span{
+    color: rgb(226, 44, 44);
+}
