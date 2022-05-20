@@ -10,14 +10,6 @@ export default function AppContainer() {
   const [name, setName] = useState("");
   const [score, setScore] = useState(0);
 
-  const containerStyle = {
-    backgroundColor: "blueviolet",
-    maxWidth: "800px",
-    minHeight: "450px",
-    borderRadius: "20px",
-    textAlign: "center",
-    marginLeft: "18%",
-  };
   return (
     <>
       <appContext.Provider
@@ -30,7 +22,7 @@ export default function AppContainer() {
           setName,
         }}
       >
-        <div className="container" style={containerStyle}>
+        <div className="container">
           {state === "start" && <StartMenu />}
           {state === "question" && <QuestionView />}
           {state === "result" && <Result />}

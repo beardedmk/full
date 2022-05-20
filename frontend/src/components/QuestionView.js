@@ -33,35 +33,40 @@ export default function QuestionView() {
     <>
       <div className="question">
         <h2>{Questions[currentQue].prompt}</h2>
-
-        <button
-          onClick={() => {
-            selectedOption("optionA");
-          }}
-        >
-          {Questions[currentQue].optionA}
-        </button>
-        <button
-          onClick={() => {
-            selectedOption("optionB");
-          }}
-        >
-          {Questions[currentQue].optionB}
-        </button>
-        <button
-          onClick={() => {
-            selectedOption("optionC");
-          }}
-        >
-          {Questions[currentQue].optionC}
-        </button>
-        <button
-          onClick={() => {
-            selectedOption("optionD");
-          }}
-        >
-          {Questions[currentQue].optionD}
-        </button>
+        <div className="optionsBtn">
+          <button
+            onClick={() => {
+              selectedOption("optionA");
+            }}
+            className="options"
+          >
+            {Questions[currentQue].optionA}
+          </button>
+          <button
+            onClick={() => {
+              selectedOption("optionB");
+            }}
+            className="options"
+          >
+            {Questions[currentQue].optionB}
+          </button>
+          <button
+            onClick={() => {
+              selectedOption("optionC");
+            }}
+            className="options"
+          >
+            {Questions[currentQue].optionC}
+          </button>
+          <button
+            onClick={() => {
+              selectedOption("optionD");
+            }}
+            className="options"
+          >
+            {Questions[currentQue].optionD}
+          </button>
+        </div>
       </div>
       <div>
         {currentQue !== Questions.length - 1 ? (

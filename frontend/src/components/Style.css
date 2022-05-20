@@ -1,5 +1,8 @@
 .start, .question, .result{
-padding: 20px 40px
+padding: 20px;
+
+/* display: flex; */
+justify-content: center;
 }
 
 button{
@@ -25,4 +28,30 @@ input{
 
 span{
     color: rgb(226, 44, 44);
+}
+
+.container{
+    background-color: blueviolet;
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 800px;
+    min-height: 450px;
+padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: aqua;
+}
+
+.app{
+    width: 50%;
+    margin: auto;
+}
+
+.options{
+    display: block;
+    padding: 10px;
+    
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
 }
