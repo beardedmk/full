@@ -55,3 +55,30 @@ padding: 40px;
     margin: auto;
     margin-bottom: 10px;
 }
+
+.login{
+    color: rgb(172, 201, 243);
+}
+.inputFiled:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+.login{
+    padding-top: 10rem;
+}
+
+
+.inputFiled{
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.loginBtn{
+    display: grid;
+    padding: 10px 54px;
+    color: rgb(78, 78, 78);
+}

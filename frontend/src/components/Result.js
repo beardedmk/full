@@ -4,19 +4,20 @@ import { useContext } from "react";
 import "./Style.css";
 
 export default function Result() {
-  const { score, name, setState } = useContext(appContext);
+  const { score, setScore, name, setState } = useContext(appContext);
   return (
     <div className="result">
       {score > 1 ? (
-        <h2 style={{ color: "white" }}>
-          <span>{name}!</span> You perform excellently well
-        </h2>
+        <h4 style={{ color: "white" }}>
+          <span>{name}!</span> You perform well in quiz
+        </h4>
       ) : (
         <>
           <h1>{name}! Give one more chance</h1>
           <button
             type="submit"
             onClick={() => {
+              setScore(0);
               setState("question");
             }}
           >

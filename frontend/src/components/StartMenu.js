@@ -3,7 +3,7 @@ import { appContext } from "../context/Context";
 import { useContext } from "react";
 import "./Style.css";
 
-export default function StartMenu() {
+function StartMenu() {
   const { name, setState, setName } = useContext(appContext);
   const start = () => {
     {
@@ -29,3 +29,4 @@ export default function StartMenu() {
     </div>
   );
 }
+export default StartMenu;

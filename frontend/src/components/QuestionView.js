@@ -32,7 +32,7 @@ export default function QuestionView() {
   return (
     <>
       <div className="question">
-        <h2>{Questions[currentQue].prompt}</h2>
+        <h5>{Questions[currentQue].prompt}</h5>
         <div className="optionsBtn">
           <button
             onClick={() => {
